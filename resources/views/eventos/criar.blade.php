@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('titulo', 'Contato')
+@section('titulo', 'Criar Evento')
 @section('conteudo')
-<h1>Contato</h1>
+<h1>Criar Evento</h1>
 @endsection

@@ -24,10 +24,13 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Eventos</a>
+                            <a href="/" class="nav-link">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Criar Eventos</a>
+                            <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contato" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a href="/" class="nav-link">Entrar</a>

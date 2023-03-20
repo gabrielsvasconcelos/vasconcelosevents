@@ -2,6 +2,7 @@
 @section('titulo', 'Página Principal')
     
 @section('conteudo')
+{{--
         @if(10<20)
             <p>True</p>
         @endif
@@ -18,4 +19,6 @@
             <p>{{$item}}</p>
             
         @endforeach
+--}}
+    <h1>Página Inicial</h1>
 @endsection
