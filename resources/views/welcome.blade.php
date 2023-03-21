@@ -21,4 +21,9 @@
         @endforeach
 --}}
     <h1>Página Inicial</h1>
+    <h2>Lista de eventos</h2>
+    @foreach($eventos as $evento)
+        <p>Nome: {{$evento->titulo}} - Descrição: {{$evento->descricao}}</p>
+    @endforeach
+
 @endsection
