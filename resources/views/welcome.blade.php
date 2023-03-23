@@ -27,6 +27,7 @@
 
     @endforeach
 --}}
+
     <div id="search-container" class="col-md-12">
         <h1>Busque um evento</h1>
         <form action="">
@@ -39,7 +40,7 @@
         <div id="cards-container" class="row">
             @foreach($eventos as $evento)
             <div class="card col-md-3">
-                <img src="imagens/festa.jpg" alt="{{$evento->titulo}}">
+                <img src="imagens/eventos/{{$evento->imagem}}" alt="{{$evento->titulo}}">
                 <div class="card-body">
                     <p class="card-body">01/01/2023</p>
                     <h5 class="card-title">{{$evento->titulo}}</h5>
