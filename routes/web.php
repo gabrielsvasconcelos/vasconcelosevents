@@ -21,5 +21,6 @@ Route::get('/contato', function () {
 Route::get('/produto/{id?}', function ($id = 1) {
     return view('produto',['id' => $id]);
 });
+Route::post('/eventos', [EventoController::class, 'store']);
 Route::get('/eventos/criar', [EventoController::class, 'criar']);
 Route::get('/contato', [EventoController::class, 'contato']);

@@ -102,6 +102,20 @@ header{
     font-size: 14px;
     color: #757575;
 }
+/* cadastro de eventos */
+
+#event-create-container{
+    padding: 50px;
+}
+#event-create-container label{
+    font-weight: bold;
+}
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea{
+    font-size: 12px;
+}
+
 
 /* footer */
 footer{
