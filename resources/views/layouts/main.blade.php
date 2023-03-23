@@ -38,6 +38,9 @@
                 </nav>
             </nav>
         </header>
+        @if(session('msg_criado'))
+            <p class="msg">{{session('msg_criado')}}</p>
+        @endif
         @yield('conteudo')
     </body>
     <footer>
