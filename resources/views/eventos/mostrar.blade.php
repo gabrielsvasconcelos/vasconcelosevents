@@ -13,6 +13,12 @@
                 <p class="events-participants">X participantes</p>
                 <p class="event-owner">Dono do evento</p>
                 <a href="" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
+                <ul id="items-list">
+                    <h3>Evento conta com:</h3>
+                    @foreach($evento->itens as $item)
+                        <li>{{$item}}</li>
+                    @endforeach
+                </ul>
             </div>
             <div class="col-md-12" id="description-container">
                 <h3>Sobre o evento</h3>
