@@ -9,4 +9,5 @@ class Evento extends Model
 {
     use HasFactory;
     protected $casts = ['itens' =>  'array'];
+    protected $data = ['data'];
 }

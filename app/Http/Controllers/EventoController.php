@@ -30,6 +30,7 @@ class EventoController extends Controller
         $evento->cidade = $dados_evento->cidade;
         $evento->privado = $dados_evento->privado;
         $evento->itens = $dados_evento->itens;
+        $evento->data = $dados_evento->data;
         
         //Upload da imagem
         if($dados_evento->hasFile('imagem') && $dados_evento->file('imagem')->isValid()){
