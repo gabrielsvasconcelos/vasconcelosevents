@@ -30,12 +30,16 @@
 
     <div id="search-container" class="col-md-12">
         <h1>Busque um evento</h1>
-        <form action="">
+        <form action="/" method="GET">
             <input type="text" id="search" name="search" class="form-control" placeholder="Procurar eventos">
         </form>
     </div>
     <div id="events-container" class="col-md-12">
+        @if($search)
+        <h2>Buscando por: {{$search}}</h2>
+        @else
         <h2>Próximos Eventos</h2>
+        @endif
         <p class="subtitle">Veja os eventos nos próximos dias</p>
         <div id="cards-container" class="row">
             @foreach($eventos as $evento)

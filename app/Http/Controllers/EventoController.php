@@ -9,12 +9,18 @@ use App\Models\Evento;
 class EventoController extends Controller
 {
     public function index(){
-        $eventos = Evento::all();
+        $busca = request('search');
+
+        if($busca){
+            $eventos = Evento::where([['titulo', 'like','%'.$busca.'%']])->get();
+        }else{
+            $eventos = Evento::all();
+        }
         #$nome = 'Gabriel';
         #$array = [10,20,30,40,50];
         #$nomes = ['Chico', 'Pedrita', 'Tiririca'];
         #return view('welcome', ['nome' => $nome, 'arr' => $array, 'nomes' => $nomes]);
-        return view('welcome', ['eventos' => $eventos]);
+        return view('welcome', ['eventos' => $eventos, 'search' => $busca]);
     }
     public function criar(){
         return view('eventos/criar');
