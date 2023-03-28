@@ -27,12 +27,12 @@
                             <a href="/" class="nav-link">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="/contato" class="nav-link">Contato</a>
                         </li>
                         @auth
+                        <li class="nav-item">
+                            <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
+                        </li>
                         <li class="nav-item">
                             <a href="/dashboard" class="nav-link">Meus Eventos</a>
                         </li>

@@ -9,9 +9,9 @@
         
             <div id="info-container" class="col-md-6">
                 <h1>{{$evento->titulo}}</h1>
-                <p class="events-city">{{$evento->cidade}}</p>
-                <p class="events-participants">X participantes</p>
-                <p class="event-owner">Dono do evento</p>
+                <p class="events-city">Local: {{$evento->cidade}}</p>
+                <p class="events-participants">Participantes: X participantes</p>
+                <p class="event-owner">Dono do evento: {{$donoevento['name']}}</p>
                 <a href="" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
                 <ul id="items-list">
                     <h3>Evento conta com:</h3>
