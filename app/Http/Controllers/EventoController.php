@@ -56,4 +56,9 @@ class EventoController extends Controller
         $evento = Evento::findOrFail($id);
         return view ('eventos/mostrar', ['evento' => $evento]);
     }
+    public function dashboard(){
+        $usuario = auth()->user();
+        $eventos = $usuario->eventos;
+        return view('eventos/dashboard', ['eventos' => $eventos]);
+    }
 }

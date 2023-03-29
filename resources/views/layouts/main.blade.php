@@ -26,6 +26,7 @@
                         <li class="nav-item">
                             <a href="/" class="nav-link">Página Inicial</a>
                         </li>
+<<<<<<< Updated upstream
                         <li class="nav-item">
                             <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
                         </li>
@@ -35,6 +36,14 @@
                         @auth
                         <li class="nav-item">
                             <a href="/dashboard" class="nav-link">Meus Eventos</a>
+=======
+                        @auth
+                        <li class="nav-item">
+                            <a href="/dashboard" class="nav-link">Meus Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/eventos/criar" class="nav-link">Criar Eventos</a>
+>>>>>>> Stashed changes
                         </li>
                         <li class="nav-item">
                             <form method="POST" action="/logout">
@@ -44,6 +53,10 @@
                         </li>
                         @endauth
                         @guest
+
+                        <li class="nav-item">
+                            <a href="/contato" class="nav-link">Contato</a>
+                        </li>
                         <li class="nav-item">
                             <a href="/login" class="nav-link">Entrar</a>
                         </li>
