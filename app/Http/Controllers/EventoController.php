@@ -47,9 +47,11 @@ class EventoController extends Controller
             $evento->imagem = $nomeimagem;
         }   
         
+        $user = auth()->user();
+        $evento->user_id = $user->id;
         $evento->save();
 
-        return redirect('/')->with('msg_criado', 'Evento criado com sucesso!');
+        return redirect('/dashboard')->with('msg_criado', 'Evento criado com sucesso!');
         
     }
     public function show($id){
@@ -60,5 +62,9 @@ class EventoController extends Controller
         $usuario = auth()->user();
         $eventos = $usuario->eventos;
         return view('eventos/dashboard', ['eventos' => $eventos]);
+    }
+    public function deletar($id){
+        Evento::findOrFail($id)->delete();
+        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');
     }
 }

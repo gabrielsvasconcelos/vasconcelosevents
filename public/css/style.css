@@ -171,7 +171,9 @@ header{
 .dashboard-events-container th{
     width: 25%;
 }
-
+.dashboard-events-container #links{
+    display: inline-block;
+}
 
 /* footer */
 footer{
