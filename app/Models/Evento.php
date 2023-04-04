@@ -10,6 +10,7 @@ class Evento extends Model
     use HasFactory;
     protected $casts = ['itens' =>  'array'];
     protected $data = ['data'];
+    protected $guarded = [];
     public function user(){
         return $this->belongsTo('App\Models\User');
     }

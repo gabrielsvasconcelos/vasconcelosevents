@@ -24,6 +24,8 @@ Route::get('/produto/{id?}', function ($id = 1) {
 Route::post('/eventos', [EventoController::class, 'store']);
 Route::get('/eventos/criar', [EventoController::class, 'criar']);
 Route::get('/evento/{id}', [EventoController::class, 'show']);
+Route::get('/editar/{id}', [EventoController::class, 'editar']);
+Route::put('evento/update/{id}', [EventoController::class, 'update']);
 Route::delete('/evento/{id}', [EventoController::class, 'deletar']);
 Route::get('/dashboard', [EventoController::class, 'dashboard'])->middleware('auth');
 Route::get('/contato', [EventoController::class, 'contato']);
